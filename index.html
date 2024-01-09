@@ -1,0 +1,171 @@
+
+<!-- saved from url=(0051)https://www.lumenvox.com/products/tts/tts_demo.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--www proxy TESTV7 -->
+	
+    <title>LumenVox Text-to-Speech</title>
+    <meta name="description" content="LumenVox Text-to-Speech technology offers the most realistic, natural sounding speech on the market. ">
+    <meta name="keywords" content="speech recognition, text to speech, text-to-speech, TTS, LumenVox, speech application">
+	<link rel="shortcut icon" href="https://www.lumenvox.com/wp-content/uploads/2021/12/favicon-32x32-1.png">
+    <link href="./index_files/tts_demo.css" rel="stylesheet" type="text/css" media="all">
+	<script type="text/javascript" async="" src="./index_files/recaptcha__en.js.download" crossorigin="anonymous" integrity="sha384-CDkofqMo6hSAPRh2TZj9HOLusb5hze4z6vkh6YWvd810w+KTuT5lucK9hQN36Xh7"></script><script src="./index_files/api.js.download"></script><script type="text/javascript" src="chrome-extension://ehghoapnlpepjmfbgaomdiilchcjemak/libs/customElements.js" class="__REQUESTLY__SCRIPT"></script><script charset="utf-8" src="chrome-extension://pipjjbgofgieknlpefmcckdmgaaegban/dist/ruffle.js?id=62061676332"></script>
+	<script type="text/javascript" src="./index_files/jquery-core.js.download"></script>
+	<script type="text/javascript" src="./index_files/TTS2.js.download"></script>
+</head>
+
+<body>
+        <!--sideNav-->
+        <div id="pageBody">
+            
+        	<div id="ttsBanner">
+            	<div class="ttsControls"> 
+                	<h1>TRY OUR TEXT-TO-SPEECH TECHNOLOGY</h1>
+					<div id="requestPending">
+						<img src="./index_files/LoadingGIF.gif" alt="Loading" width="35" height="35">
+						<div>Processing Request...</div>
+					</div>
+                    <div class="ttsInput">
+						<textarea id="ttsTxt" name="ttsTxt" rows="3">Type any message here!</textarea>
+                        <div>Characters used: <span>0</span>/250</div>
+                        <div class="chooseLanguage">
+                            <span><a name="chooseLanguage" href="https://www.lumenvox.com/products/tts/tts_demo.html#chooseLanguage" id="lnkChoose">Choose a Language: </a></span><div id="chosenLanguage"> <span id="spanVoice"> Chris </span></div><input type="hidden" id="txtvoice" name="txtvoice" value="chris"><input type="hidden" id="txtengine" name="txtengine" value="1">
+                            <img id="btnSendTxt" src="./index_files/btnListen.png" width="74" height="18" alt="Listen" class="imgHover">
+                            <img id="btnStopAudio" src="./index_files/btnStop.png" width="74" height="18" alt="Listen">     
+					</div>
+                         
+
+						 
+						                          <div id="div_languages" style="display:none">
+                         	<div>
+                            	<h2>American English</h2>
+                                <a onclick="change(&#39;Leah&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female Child (Leah)</a>
+                                <a onclick="change(&#39;Amanda&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Amanda)</a>
+                                <a onclick="change(&#39;Jackie&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Jackie)</a>
+                                <a onclick="change(&#39;Kim&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Kim)</a>
+                                <a onclick="change(&#39;Lindsey&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Lindsey)</a>
+                                <a onclick="change(&#39;Justin&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male Child (Justin)</a>
+                                <a onclick="change(&#39;Alvin&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Alvin)</a>
+                                <a onclick="change(&#39;Andrew&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Andrew)</a>
+                                <a onclick="change(&#39;Chris&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Chris)</a>
+                                
+                                <h2>Australian English</h2>
+                                <a onclick="change(&#39;Molly&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Molly)</a>
+                                <a onclick="change(&#39;Ian&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Ian)</a>
+                                
+                                <h2>Brazilian Portuguese</h2>
+                            	<a onclick="change(&#39;Giovanna&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Giovanna)</a>
+                                <a onclick="change(&#39;Gustavo&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Gustavo)</a>
+                            </div>
+                            <div>
+                                <h2>British English</h2>
+                                <a onclick="change(&#39;Chloe&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Chloe)</a>
+                                <a onclick="change(&#39;Gwendolyn_en&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Gwendolyn)</a>
+                                <a onclick="change(&#39;Megan&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Megan)</a>
+                                <a onclick="change(&#39;Ben&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Ben)</a>
+                                <a onclick="change(&#39;Gavin_en&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Gavin)</a>
+                                
+                                <h2>British English (Welsh)</h2>
+                                <a onclick="change(&#39;Gwendolyn_en&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Gwendolyn)</a>
+                                <a onclick="change(&#39;Gavin_en&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Gavin)</a>
+								
+                                <h2>Canadian French</h2>
+                                <a onclick="change(&#39;Elodie&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Elodie)</a>
+                                
+                                <h2>Castilian Spanish</h2>
+                                <a onclick="change(&#39;Martina&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Martina)</a>
+                                <a onclick="change(&#39;Antonio&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Antonio)</a>
+                                
+                                <h2>Danish</h2>
+                                <a onclick="change(&#39;Helsa&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Helsa)</a>
+                                <a onclick="change(&#39;Mikkel&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Mikkel)</a>
+                                
+                                <h2>Dutch</h2>
+                                <a onclick="change(&#39;Anneka&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Anneka)</a>
+                            	<a onclick="change(&#39;Henrick&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Henrick)</a>
+
+                            </div>
+                            <div>
+
+                                <h2>European French</h2>
+                                <a onclick="change(&#39;Margot&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Margot)</a>
+                            	<a onclick="change(&#39;Jean&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Jean)</a>
+                                
+								<h2>European Portuguese</h2>
+                            	<a onclick="change(&#39;Catina&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Catina)</a>
+                            	<a onclick="change(&#39;Adriano&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Adriano)</a>
+                                
+                                <h2>Icelandic</h2>
+                                <a onclick="change(&#39;Birta&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Birta)</a>
+                                <a onclick="change(&#39;Isak&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Isak)</a>
+                                
+                                <h2>Indian English</h2>
+                                <a onclick="change(&#39;Rani&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Rani)</a>
+                                
+                                <h2>Italian</h2>
+                                <a onclick="change(&#39;Emilia&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Emilia)</a>
+                                <a onclick="change(&#39;Angelo&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Angelo)</a>
+                                
+                                <h2>North American Spanish</h2>
+                                <a onclick="change(&#39;Lorena&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Lorena)</a>
+                            	<a onclick="change(&#39;Luis&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Luis)</a>
+
+                                
+                                <h2>Norwegian </h2>
+                                <a onclick="change(&#39;Mathilde&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Mathilde)</a>
+
+                            </div>
+                            <div class="last">
+								
+                            	<h2>Polish</h2>
+                                <a onclick="change(&#39;Agnieszka&#39;);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Agnieszka)</a>
+                                <a onclick="change(&#39;Ewa&#39;);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Ewa)</a>
+                                <a onclick="change(&#39;Karolina&#39;);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Karolina)</a>
+                            	<a onclick="change(&#39;Jakub&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Jakub)</a>
+                            	<a onclick="change(&#39;Jacek&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Jacek)</a>
+
+								<h2>Romanian</h2>
+                                <a onclick="change(&#39;Irina&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Irina)</a>
+                                
+                                <h2>Russian</h2>
+                                <a onclick="change(&#39;Nikita&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Nikita)</a>
+                                <a onclick="change(&#39;Vasili&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Vasili)</a>
+                                
+                                <h2>Standard German</h2>
+                                <a onclick="change(&#39;Heidi&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Heidi)</a>
+                                <a onclick="change(&#39;Lukas&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Lukas)</a>
+                                
+                                <h2>Swedish</h2>
+                                <a onclick="change(&#39;Janna&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Janna)</a>
+                                
+                                <h2>Turkish</h2>
+                                <a onclick="change(&#39;Sevi&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Sevi)</a>
+                                
+                                <h2>Welsh</h2>
+                                <a onclick="change(&#39;Gwendolyn_cy&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Gwendolyn)</a>
+                                <a onclick="change(&#39;Gavin_cy&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Gavin)</a>
+
+                            </div>
+                        </div>
+                       
+
+					   
+					   
+                        <div class="clrBoth"></div>
+                    </div>
+                </div>
+            </div>
+            
+
+<p>
+            	<br><font size="-3">*Most of the voices features on this website are sampled at 22 KHz. This is higher 
+                than the sampling rate of most telephone systems (which are limited to 8 KHz), so 8 KHz voices designed 
+                for telephony applications or IVRs will have lower fidelity.</font>
+            </p>			
+
+        <!--pageBody--></div>
+
+		<!--Scripts-->
+<!--Scripts-->
+
+
+
+<div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-z0r5v4hvjsn8" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="./index_files/anchor.html"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./index_files/saved_resource.html"></iframe></div></body></html>
