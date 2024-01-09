@@ -2,34 +2,34 @@
 <!-- saved from url=(0051)https://www.lumenvox.com/products/tts/tts_demo.html -->
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--www proxy TESTV7 -->
 	
-    <title>LumenVox Text-to-Speech</title>
-    <meta name="description" content="LumenVox Text-to-Speech technology offers the most realistic, natural sounding speech on the market. ">
-    <meta name="keywords" content="speech recognition, text to speech, text-to-speech, TTS, LumenVox, speech application">
+    <title>Lumieno Text-to-Speech</title>
+    <meta name="description" content="A revival of the 2019 version of Lumenvox. ">
+    <meta name="keywords" content="speech recognition, text to speech, text-to-speech, TTS, Lumieno, speech application">
 	<link rel="shortcut icon" href="https://www.lumenvox.com/wp-content/uploads/2021/12/favicon-32x32-1.png">
-    <link href="./index_files/tts_demo.css" rel="stylesheet" type="text/css" media="all">
-	<script type="text/javascript" async="" src="./index_files/recaptcha__en.js.download" crossorigin="anonymous" integrity="sha384-CDkofqMo6hSAPRh2TZj9HOLusb5hze4z6vkh6YWvd810w+KTuT5lucK9hQN36Xh7"></script><script src="./index_files/api.js.download"></script><script type="text/javascript" src="chrome-extension://ehghoapnlpepjmfbgaomdiilchcjemak/libs/customElements.js" class="__REQUESTLY__SCRIPT"></script><script charset="utf-8" src="chrome-extension://pipjjbgofgieknlpefmcckdmgaaegban/dist/ruffle.js?id=62061676332"></script>
-	<script type="text/javascript" src="./index_files/jquery-core.js.download"></script>
-	<script type="text/javascript" src="./index_files/TTS2.js.download"></script>
+    <link href="./css/tts_demo.css" rel="stylesheet" type="text/css" media="all">
+	<script type="text/javascript" async="" src="./js/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-CDkofqMo6hSAPRh2TZj9HOLusb5hze4z6vkh6YWvd810w+KTuT5lucK9hQN36Xh7"></script><script src="./js/api.js"></script>
+	<script type="text/javascript" src="https://www.lumenvox.com/js/jquery/jquery-core.js"></script>
+	<script type="text/javascript" src="https://www.lumenvox.com/js/lv/TTS2.js?version=12.0"></script>
 </head>
 
 <body>
         <!--sideNav-->
         <div id="pageBody">
-            
+                       	<h1>This site is kinda broken right now, but stuff will be fixed soon!</h1>
         	<div id="ttsBanner">
             	<div class="ttsControls"> 
                 	<h1>TRY OUR TEXT-TO-SPEECH TECHNOLOGY</h1>
 					<div id="requestPending">
-						<img src="./index_files/LoadingGIF.gif" alt="Loading" width="35" height="35">
+						<img src="./img/LoadingGIF.gif" alt="Loading" width="35" height="35">
 						<div>Processing Request...</div>
 					</div>
                     <div class="ttsInput">
 						<textarea id="ttsTxt" name="ttsTxt" rows="3">Type any message here!</textarea>
                         <div>Characters used: <span>0</span>/250</div>
                         <div class="chooseLanguage">
-                            <span><a name="chooseLanguage" href="https://www.lumenvox.com/products/tts/tts_demo.html#chooseLanguage" id="lnkChoose">Choose a Language: </a></span><div id="chosenLanguage"> <span id="spanVoice"> Chris </span></div><input type="hidden" id="txtvoice" name="txtvoice" value="chris"><input type="hidden" id="txtengine" name="txtengine" value="1">
-                            <img id="btnSendTxt" src="./index_files/btnListen.png" width="74" height="18" alt="Listen" class="imgHover">
-                            <img id="btnStopAudio" src="./index_files/btnStop.png" width="74" height="18" alt="Listen">     
+                            <span><a name="chooseLanguage" href="#chooseLanguage" id="lnkChoose">Choose a Language: </a></span><div id="chosenLanguage"> <span id="spanVoice"> Chris </span></div><input type="hidden" id="txtvoice" name="txtvoice" value="chris"><input type="hidden" id="txtengine" name="txtengine" value="1">
+                            <img id="btnSendTxt" src="./img/btnListen.png" width="74" height="18" alt="Listen" class="imgHover">
+                            <img id="btnStopAudio" src="./img/btnStop.png" width="74" height="18" alt="Listen">     
 					</div>
                          
 
@@ -37,15 +37,17 @@
 						                          <div id="div_languages" style="display:none">
                          	<div>
                             	<h2>American English</h2>
-                                <a onclick="change(&#39;Leah&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female Child (Leah)</a>
-                                <a onclick="change(&#39;Amanda&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Amanda)</a>
-                                <a onclick="change(&#39;Jackie&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Jackie)</a>
-                                <a onclick="change(&#39;Kim&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Kim)</a>
-                                <a onclick="change(&#39;Lindsey&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Lindsey)</a>
-                                <a onclick="change(&#39;Justin&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male Child (Justin)</a>
-                                <a onclick="change(&#39;Alvin&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Alvin)</a>
-                                <a onclick="change(&#39;Andrew&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Andrew)</a>
-                                <a onclick="change(&#39;Chris&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Male (Chris)</a>
+                                <a onclick="change(&#39;Leah&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Ivy</a>
+                                <a onclick="change(&#39;Amanda&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Kimberly</a>
+                                <a onclick="change(&#39;Jackie&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Salli</a>
+                                <a onclick="change(&#39;Kim&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Jennifer</a>
+                                <a onclick="change(&#39;Lindsey&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Kendra</a>
+				<a onclick="change(&#39;Rebecca&#39;,2);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Julie</a>
+                                <a onclick="change(&#39;Justin&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Justin</a>
+                                <a onclick="change(&#39;Alvin&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Chipmunk</a>
+                                <a onclick="change(&#39;Andrew&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Eric</a>
+                                <a onclick="change(&#39;Chris&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Joey</a>
+				<a onclick="change(&#39;Jason&#39;,2);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Paul</a>
                                 
                                 <h2>Australian English</h2>
                                 <a onclick="change(&#39;Molly&#39;,1);" href="https://www.lumenvox.com/products/tts/tts_demo.html#">Female (Molly)</a>
